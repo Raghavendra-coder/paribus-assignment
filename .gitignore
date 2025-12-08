@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+db.sqlite3
+*.log
+*.pot
+*.py[cod]
+*.swp
+*.coverage
+.env
+venv/
+*.egg-info
+*.egg
+.DS_Store
