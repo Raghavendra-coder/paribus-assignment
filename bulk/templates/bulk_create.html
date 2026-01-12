@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bulk Hospital Creation</title>
+</head>
+<body>
+    <h1>Bulk Hospital Creation</h1>
+    <form method="post" action="{% url 'bulk:bulk_create' %}">
+        {% csrf_token %}
+        <textarea name="hospitals_data" rows="20" cols="80" placeholder='Enter hospital data as JSON array, e.g.:
+[
+    {"name": "Hospital 1", "address": "Address 1"},
+    {"name": "Hospital 2", "address": "Address 2"}
+]'></textarea>
+        <br><br>
+        <input type="submit" value="Create Hospitals">
+    </form>
+</body>
+</html>
